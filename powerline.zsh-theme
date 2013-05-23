@@ -31,6 +31,6 @@ if [ "$POWERLINE_DETECT_SSH" != "" ]; then
   fi
 fi
 
-PROMPT="%k%F{blue}%d "$POWERLINE_SEC1_BG$POWERLINE_SEC1_FG$POWERLINE_PROMPT"%k%f"
+PROMPT=$'\u2507'"%k%F{blue}%1~ "$POWERLINE_SEC1_BG$POWERLINE_SEC1_FG$POWERLINE_PROMPT"%k%f"
 RPROMPT="%f%k"$'$(git_prompt_info)$(git_prompt_status)'" %F{red}"$'$(rvm-prompt)'"%f%k"
 
